@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+        rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+       body {
+            display: flex;
+            align-content: center;
+            justify-content:center;
+            align-items:center;
+            height: 100vh;
+        }
+
+        .coupon {
+            margin-bottom: 10vh;
+            border: 2px dashed #000;
+            border-radius: 15px;
+            width: 39vh;
+            height: 20vh;
+            background-color: #ff6961;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5em;
+            position: relative;
+            margin-left: 1px;
+            margin-right: 1px;
+        }
+
+        .coupon-interno {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            font-family: Arial, sans-serif;
+            border: 1px solid #ce4a4b;
+            border-radius: 15px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .text {
+            color: #fff;
+            text-align: center;
+            font-size: 2.5vh;
+        }
+
+        .number {
+            font-size: 3vh;
+            writing-mode: vertical-lr;
+            width: 5vh;
+            display: flex;
+            align-content: center;
+            align-items: center;
+        }
+
+        .number.left {
+            left: 10px;
+        }
+
+        .number.right {
+            right: 10px;
+        }
+
+        .divisor-left {
+            border: 1px solid #ce4a4b;
+            height: 100%;
+            margin-right: 20px;
+        }
+
+        .divisor-right {
+            border: 1px solid #ce4a4b;
+            height: 100%;
+            margin-left: 20px;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        .coupon-content {
+            display: none;
+        }
+
+        #state-1:checked~.coupon-wrapper .state-1-content {
+            display: flex;
+        }
+
+        #state-2:checked~.coupon-wrapper .state-2-content {
+            display: flex;
+        }
+
+        .reveal-button {
+            background-color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            color: #ff6961;
+        }
+
+        .contenedor-boton-Anterior{
+            width: 200px;
+            height: 200px;
+            display: contents;
+        }
+
+        .boton-Anterior {
+            width: 112px;
+            height: 45px;
+            border-radius: 17PX;
+            background-color: #ff6961;
+            border: transparent;
+            border: 2px dashed #000;
+        }
+
+        .contenedor-Siguiente{
+            width: 200px;
+            height: 200px;
+        }
+
+        .boton-Sigueinte {
+            width: 112px;
+            height: 45px;
+            border-radius: 17PX;
+            background-color: #ff6961;
+            border: transparent;
+            border: 2px dashed #000;
+        }
+
+        .boton-Sigueinte:hover,
+        .boton-Anterior:hover {
+        background-color: aliceblue;
+        }
+
+        .boton-Sigueinte a {
+            font-family: "Playwrite GB S", cursive;
+            font-optical-sizing: auto;
+            text-decoration: none;
+            color: #631f5a;
+        }
+
+        .boton-Anterior a {
+            font-family: "Playwrite GB S", cursive;
+            font-optical-sizing: auto;
+            text-decoration: none;
+            color: #631f5a;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="radio" name="state" id="state-1" checked>
+    <input type="radio" name="state" id="state-2">
+    <div class="contenedor-boton-Anterior">
+        <button class="boton-Anterior"><a href="./Cupon2.html">Regresar</a></button>
+    </div>
+    <div class="coupon-wrapper">
+        <div class="coupon coupon-content state-1-content">
+            <label for="state-2" class="reveal-button">Desvelar</label>
+        </div>
+        <div class="coupon coupon-content state-2-content">
+            <div class="coupon-interno">
+                <div class="number">7785482</div>
+                <div class="divisor-left"></div>
+                <div class="text">Cupón válido para un café en la cama ☕</div>
+                <div class="divisor-right"></div>
+                <div class="number">7785482</div>
+            </div>
+        </div>
+    </div>
+    <div class="contenedor-Siguiente">
+        <button class="boton-Sigueinte"><a href="./">Siguiente</a></button>
+    </div>
+</body>
+
+</html>

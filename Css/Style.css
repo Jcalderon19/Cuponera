@@ -1,0 +1,63 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    /* font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto; */
+}
+/* Fondo general */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#c53737ba; /* Fondo beige claro similar al de la imagen */
+    margin: 0;
+}
+.Encabezado{
+    position: absolute;
+    top: 10px;
+    font-size: 120px;
+}
+   /* Estilos para el contenedor principal */
+   .cartera {
+    width: 540px;
+    height: 285px;
+    background-color: #e3b3cc; /* Color lila similar al de la cartera */
+    border: 2px solid #000; /* Borde oscuro */
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Detalle dorado en el centro */
+.detalle {
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto; 
+    font-size: 1.5em;
+    color: #631f5a;
+    position: absolute;
+    top: 63px;
+}
+.boton{
+    width: 112px;
+    height: 45px;
+    border-radius: 17PX;
+    background-color: #e3b3cc;
+    border: transparent;
+    border: 2px dashed #000
+}
+.boton:hover{
+    background-color: aliceblue;
+}
+.boton a {
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto; 
+    text-decoration: none;
+    color: #631f5a;
+}
+
+
