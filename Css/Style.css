@@ -70,7 +70,7 @@ body {
 @media screen and (max-width: 599px) {
     .Encabezado {
         font-size: 60px;
-        top: 70px;
+        top: 52px;
     }
     .cartera {
         width: 90%;
@@ -93,14 +93,22 @@ body {
     }
     .cartera {
         width: 70%;
-        height: auto;
+      
         padding: 20px;
+    }
+    .detalle{
+        font-size: 2.5em;
+    }
+    .boton{
+        width: 117px;
+    height: 60px;
     }
 }
 
 @media screen and (min-width: 1025px) {
     .Encabezado {
         font-size: 120px;
+        top: -32px;
     }
     .cartera {
         width: 540px;
