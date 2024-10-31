@@ -1,0 +1,111 @@
+/* Estilos generales */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c53737ba;
+    margin: 0;
+}
+.Encabezado {
+    position: absolute;
+    top: 10px;
+    font-size: 120px;
+    text-align: center;
+}
+
+/* Estilos para el contenedor principal */
+.cartera {
+    width: 540px;
+    height: 285px;
+    background-color: #e3b3cc;
+    border: 2px solid #000;
+    border-radius: 25px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Detalle en el centro */
+.detalle {
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto; 
+    font-size: 1.5em;
+    color: #631f5a;
+    position: absolute;
+    top: 63px;
+}
+
+.boton {
+    width: 112px;
+    height: 45px;
+    border-radius: 17px;
+    background-color: #e3b3cc;
+    border: 2px dashed #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton:hover {
+    background-color: aliceblue;
+}
+
+.boton a {
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto; 
+    text-decoration: none;
+    color: #631f5a;
+}
+
+/* Adaptaciones para diferentes resoluciones */
+@media screen and (max-width: 599px) {
+    .Encabezado {
+        font-size: 60px;
+        top: 70px;
+    }
+    .cartera {
+        width: 90%;
+    }
+    .detalle {
+        top: 20px;
+        font-size: 2.2em;
+    }
+    .boton{
+        width: 143px;
+        height: 58px;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .Encabezado {
+        font-size: 80px;
+        top: 15px;
+    }
+    .cartera {
+        width: 70%;
+        height: auto;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .Encabezado {
+        font-size: 120px;
+    }
+    .cartera {
+        width: 540px;
+        height: 285px;
+    }
+}
+
+
